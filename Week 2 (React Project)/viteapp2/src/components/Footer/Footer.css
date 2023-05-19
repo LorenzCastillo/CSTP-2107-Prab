@@ -1,0 +1,16 @@
+.footerContainer {
+    height: 20vh;
+    background: grey;
+    text-align: center;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px
+}
+
+.navItem {
+    list-style-type: none;
+}
