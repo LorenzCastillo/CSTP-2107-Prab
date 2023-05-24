@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+}
+
+.container {
+  height: 50vh;
+}
+
+.container-title {
+  display: flex;
+  justify-content: center;
+}
+
+.test {
+  width: 100vh;
+  height: 50vh;
+  background-color: white;
+}
