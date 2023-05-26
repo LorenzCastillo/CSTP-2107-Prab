@@ -18,11 +18,6 @@ module.exports = {
 		"camelcase": "warn",
 		"no-var": "error",
 		"indent": ["warn", "tab"],
-		"semi": ["error", "always"],
-		"no-unused-vars": ["off", {
-			"vars": "all",
-			"args": "after-used",
-			"ignoreRestSiblings": false
-		}]
+		"semi": ["error", "always"]
 	},
 };

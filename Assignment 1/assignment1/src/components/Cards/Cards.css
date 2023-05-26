@@ -1,17 +1,18 @@
 .cards-container {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 10px;
+	display: grid;
+	grid-template-columns: auto;
+	padding: 10px;
+	place-self: center;
 }
 
-@media (min-width: 640px) { 
-    .cards-container {
-        grid-template-columns: auto auto;
-    }
+@media (min-width: 1024px) { 
+	.cards-container {
+			grid-template-columns: auto auto;
+	}
 }
 
 @media (min-width: 1280px) { 
-    .cards-container {
-        grid-template-columns: auto auto auto;
-    }
+	.cards-container {
+			grid-template-columns: auto auto auto;
+	}
 }
