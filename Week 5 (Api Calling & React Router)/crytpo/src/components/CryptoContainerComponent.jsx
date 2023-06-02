@@ -27,7 +27,6 @@ const CryptoContainerComponent = () => {
 
     return (
         <div>
-
             {/* You have to add search field through which you can filter cryptoData */}
             <TextField />
 
