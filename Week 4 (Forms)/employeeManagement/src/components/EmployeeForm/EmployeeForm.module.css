@@ -1,0 +1,25 @@
+.formContainer {
+  background-color: grey;
+  padding: 20px;
+  display: flex;
+}
+
+.formControl {
+  padding: 8px;
+}
+
+.formControl label {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.formContainer input {
+  padding: 8px;
+  border: none;
+}
+
+.button {
+  background-color: rgb(54, 157, 54);
+  color: white;
+  margin-top: 15px;
+}
