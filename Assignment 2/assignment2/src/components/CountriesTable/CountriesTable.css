@@ -1,4 +1,45 @@
 .countries-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 370px 370px 370px
+}
+
+.countries-card {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 30px;
+}
+
+.countries-card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.countries-row {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.countries-name {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  width: 200px;
+  font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.countries-learn-more {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  padding: 0px 5px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 20px;
+  cursor: pointer;
 }
