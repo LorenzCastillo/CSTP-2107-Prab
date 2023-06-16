@@ -1,0 +1,12 @@
+.card-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.photo-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
