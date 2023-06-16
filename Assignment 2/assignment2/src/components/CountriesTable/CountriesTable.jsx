@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
+
+// Local Imports
 import "./CountriesTable.css";
+// 3rd Party Imports
+import { Link } from "react-router-dom";
 
 const CountriesTable = ({ data }) => {
-
-	const handleCountryDetails = () => {
-
-	}
-
 	return (
 		<>
 			<div className="countries-container">
@@ -19,11 +18,12 @@ const CountriesTable = ({ data }) => {
 									<div className="countries-row">
 										<div className="countries-name">
 											<p>{country.name.common}</p>
-
 										</div>
 
-										<div className="countries-learn-more" onClick={handleCountryDetails}>
-											<p>Learn More</p>
+										<div className="countries-learn-more">
+											<Link to={`/name/${country.name.common}`} style={{ textDecoration: "none" }}>
+												<p>Learn More</p>
+											</Link>
 										</div>
 									</div>
 								</div>

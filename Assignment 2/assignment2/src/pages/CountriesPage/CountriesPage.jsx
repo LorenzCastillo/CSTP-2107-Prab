@@ -1,9 +1,15 @@
+// Local Imports
+import "./CountriesPage.css";
+// 3rd Party Imports
 import { useEffect, useState } from "react";
 import CountriesTable from "../../components/CountriesTable/CountriesTable";
-import "./Countries.css";
 
-const Countries = () => {
+const CountriesPage = () => {
 	const [countryData, setCountryData] = useState([]);
+
+	useEffect(() => {
+		getCountries();
+	}, []);
 
 	const getCountries = async () => {
 		const response = await fetch("https://restcountries.com/v3.1/all?fields=name,flags");
@@ -11,13 +17,11 @@ const Countries = () => {
 		setCountryData(data);
 	};
 
-	useEffect(() => {
-		getCountries();
-	}, []);
-
 	return (
 		<>
-			<div className="flex">
+			<div className="container">
+				<h1>Countries</h1>
+
 				<div>
 					<CountriesTable data={countryData} />
 				</div>
@@ -26,4 +30,4 @@ const Countries = () => {
 	);
 };
 
-export default Countries;
+export default CountriesPage;

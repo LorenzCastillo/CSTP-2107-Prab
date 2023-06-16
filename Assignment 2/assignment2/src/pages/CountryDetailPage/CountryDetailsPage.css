@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country-name {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 0;
+}
+
+.go-back {
+  display: inline-block;
+  padding: 20px;
+  background-color: grey;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.go-back:hover {
+  background-color: rgb(140, 140, 140);
+  cursor: pointer;
+}
